@@ -2,8 +2,6 @@
 
 Lab instructions: <https://ucsb-cs156.github.io/w24/lab/team01.html>
 
-* TODO: Update the following table, then delete this line that says "TODO".
-
 ```
 |   Name    |  GitHub Id    |         Service             |       Controller          |
 |-----------|---------------|-----------------------------|---------------------------|
