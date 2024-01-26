@@ -22,7 +22,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 @Tag(name="University info from universities.hipolabs.com")
 @Slf4j
 @RestController
-@RequestMapping("/api/university/get")
+@RequestMapping("/api/university")
 public class UniversityController {
 
     ObjectMapper mapper = new ObjectMapper();
