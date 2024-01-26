@@ -1,6 +1,5 @@
 package edu.ucsb.cs156.spring.backenddemo.controllers;
 
-import edu.ucsb.cs156.spring.backenddemo.services.CountryCodeQueryService;
 import edu.ucsb.cs156.spring.backenddemo.services.UniversityQueryService;
 import lombok.extern.slf4j.Slf4j;
 
