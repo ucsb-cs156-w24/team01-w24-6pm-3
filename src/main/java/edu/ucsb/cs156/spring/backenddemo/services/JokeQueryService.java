@@ -3,12 +3,20 @@ package edu.ucsb.cs156.spring.backenddemo.services;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.boot.web.client.RestTemplateBuilder;
-import org.springframework.stereotype.Service;
-import org.springframework.web.client.HttpClientErrorException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import org.springframework.web.client.RestTemplate;
 
 import lombok.extern.slf4j.Slf4j;
+
+import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.HttpClientErrorException;
 
 
 @Service
@@ -23,17 +31,16 @@ public class JokeQueryService {
     public static final String ENDPOINT = "https://v2.jokeapi.dev/joke/{category}?amount={numJokes}";
 
     public String getJSON(String category, String numJokes) throws HttpClientErrorException {
-        // log.info("category={}, numJokes={}", category, numJokes);
-        // HttpHeaders headers = new HttpHeaders();
-        // headers.setAccept(List.of(MediaType.APPLICATION_JSON));
-        // headers.setContentType(MediaType.APPLICATION_JSON);
-
-        // HttpEntity<String> entity = new HttpEntity<>(headers);
+        HttpHeaders headers = new HttpHeaders();
+        headers.setAccept(List.of(MediaType.APPLICATION_JSON));
+        headers.setContentType(MediaType.APPLICATION_JSON);
 
         Map<String, String> uriVariables = Map.of("category", category, "numJokes", numJokes);
 
-        // ResponseEntity<String> re = restTemplate.exchange(ENDPOINT, HttpMethod.GET, entity, String.class,
-        //         uriVariables);
-        return "";
+        HttpEntity<String> entity = new HttpEntity<>("body", headers);
+
+        ResponseEntity<String> re = restTemplate.exchange(ENDPOINT, HttpMethod.GET, entity, String.class,
+                uriVariables);
+        return re.getBody();
     }
 }
