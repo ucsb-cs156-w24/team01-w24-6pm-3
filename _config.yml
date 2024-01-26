@@ -23,4 +23,4 @@ repo_name: "TBD"
 repo: ucsb-cs156-w24/team01-w24-6pm-3
 owner: ucsb-cs156-w24
 repo_name: team01-w24-6pm-3
-pull_requests: [{"author":{"id":"U_kgDOB3D_OQ","is_bot":false,"login":"kenisha-v","name":""},"headRefName":"Kenisha-University-Service","number":18,"title":"Add University Service","url":"https://github.com/ucsb-cs156-w24/team01-w24-6pm-3/pull/18"}]
+pull_requests: [{"author":{"id":"U_kgDOB3CMjQ","is_bot":false,"login":"jenniferlopez17","name":""},"headRefName":"Jennifer-Location","number":19,"title":"Add Location Service and Tests #8","url":"https://github.com/ucsb-cs156-w24/team01-w24-6pm-3/pull/19"},{"author":{"id":"U_kgDOB3D_OQ","is_bot":false,"login":"kenisha-v","name":""},"headRefName":"Kenisha-University-Service","number":18,"title":"Add University Service","url":"https://github.com/ucsb-cs156-w24/team01-w24-6pm-3/pull/18"}]
