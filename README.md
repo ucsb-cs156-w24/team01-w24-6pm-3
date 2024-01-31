@@ -15,7 +15,7 @@ Lab instructions: <https://ucsb-cs156.github.io/w24/lab/team01.html>
 
 Repo: https://github.com/ucsb-cs156-w24/team01-w24-6pm-3
 
-On Heroku: http://team01.dokku-00.cs.ucsb.edu/swagger-ui/index.html
+On Heroku: http://team01.dokku-11.cs.ucsb.edu/swagger-ui/index.html
 
 ## About this repo
 
